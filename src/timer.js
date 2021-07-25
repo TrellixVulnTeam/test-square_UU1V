@@ -1,3 +1,5 @@
+var dataTime = document.querySelector('.timer').dataset.time;
+
 let timer = (data) => {
     
     let timerField = document.querySelector('.timer');
@@ -24,8 +26,8 @@ let timer = (data) => {
         timerField.innerHTML = strTimer;
     }, 1000);
 }
-//Время в минутах
-timer('2');
+
+timer(dataTime);
 
 //Перезагрузка с кнопки
 let btn = document.querySelector('.fail__reload').querySelector('.btn');
